@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
         },
         {
           currentPage:
-            analysis.currentPage + 918 <= 919 ? analysis.currentPage + 1 : 1,
+            analysis.currentPage + 918 < 920 ? analysis.currentPage + 1 : 1,
         }
       );
       setTimeout(async () => {
